@@ -1,0 +1,173 @@
+.pricing-page {
+  padding: 3.5rem 0 6rem;
+}
+
+.pricing-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 3.5rem;
+}
+
+.pricing-header h1 {
+  font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.pricing-sub {
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.pricing-grid-center {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 440px));
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.pricing-amount {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.pricing-amount h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.pricing-amount span {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.pricing-card--featured .pricing-amount span {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.pricing-desc {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+  min-height: 48px;
+}
+
+.pricing-card--featured .pricing-desc {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.pricing-badge-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-badge {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--color-white);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-pill);
+}
+
+.pricing-badge-sub {
+  background: rgba(201, 162, 39, 0.3);
+  color: #ffd875;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-pill);
+}
+
+.pricing-perks {
+  list-style: none;
+  padding: 1.5rem 0 0;
+  margin: 0;
+  border-top: 1px solid var(--color-border);
+  display: grid;
+  gap: 0.85rem;
+  font-size: 0.92rem;
+}
+
+.pricing-card--featured .pricing-perks {
+  border-top-color: rgba(255, 255, 255, 0.15);
+}
+
+.pricing-perks li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.pricing-card .pricing-perks svg {
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.pricing-card--featured .pricing-perks svg {
+  color: var(--color-primary-muted);
+  flex-shrink: 0;
+}
+
+.pricing-guarantees {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2.25rem;
+  margin-bottom: 5rem;
+  background: var(--color-white);
+}
+
+.guarantee-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.guarantee-icon {
+  color: var(--color-primary);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.guarantee-item strong {
+  display: block;
+  font-size: 1.05rem;
+  color: var(--color-charcoal);
+  margin-bottom: 0.25rem;
+}
+
+.guarantee-item p {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.pricing-faq {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.pricing-faq h2 {
+  font-size: 2.2rem;
+  color: var(--color-charcoal);
+}
+
+@media (max-width: 860px) {
+  .pricing-grid-center {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+  }
+  .pricing-guarantees {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

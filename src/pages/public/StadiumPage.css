@@ -1,0 +1,153 @@
+.stadium-page {
+  padding: 3.5rem 0 6rem;
+}
+
+.stadium-header {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto 4rem;
+}
+
+.stadium-header h1 {
+  font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.stadium-lead {
+  font-size: 1.12rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.stadium-hero-banner img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.stadium-section {
+  margin-bottom: 5rem;
+}
+
+.stadium-section h2 {
+  font-size: 2.2rem;
+  color: var(--color-charcoal);
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.spec-card {
+  padding: 1.5rem;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+}
+
+.spec-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.spec-card strong {
+  font-size: 1.05rem;
+  color: var(--color-charcoal);
+  font-weight: 600;
+}
+
+.sports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.sport-card {
+  padding: 1.75rem;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+}
+
+.sport-icon {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.sport-card h3 {
+  font-size: 1.15rem;
+  color: var(--color-charcoal);
+  margin-bottom: 0.5rem;
+}
+
+.sport-card p {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.stadium-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.stadium-split__img img {
+  width: 100%;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.stadium-split__content h2 {
+  font-size: 2.2rem;
+  color: var(--color-charcoal);
+  margin-bottom: 1rem;
+}
+
+.stadium-split__content p {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.stadium-check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.stadium-check-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--color-charcoal);
+}
+
+.stadium-check-list svg {
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .stadium-split {
+    grid-template-columns: 1fr;
+  }
+}
